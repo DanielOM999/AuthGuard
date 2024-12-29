@@ -1,0 +1,25 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "D",
+  "license": "ISC",
+  "description": "Hey dont look!",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-flash": "^0.0.2",
+    "express-handlebars": "^8.0.1",
+    "express-session": "^1.18.0",
+    "method-override": "^3.0.0",
+    "nodemon": "^3.1.4",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}

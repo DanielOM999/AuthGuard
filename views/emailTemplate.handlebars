@@ -1,0 +1,114 @@
+<html><head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.header {
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+  padding: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.header h1 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.content {
+  padding: 30px;
+  text-align: center;
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #FF6B6B;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4ECDC4;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animated {
+  animation: pulse 2s infinite;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Welcome to Our Community!</h1>
+    </div>
+    <div class="content">
+      <h2>Hello there 😁,</h2>
+      <p>We're thrilled to have you join us. To get started, please verify your email address by clicking the button below:</p>
+      <a href="https://example.com/verify?token=123456" class="button animated">Verify Email</a>
+      <p class="space">This link will expire in 24 hours for security reasons.</p>
+      <p>If you didn't request this, please ignore this email.</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2023 AuthGuard All rights reserved.</p>
+      <p>123 Main Street, Anytown, AN 12345</p>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const button = document.querySelector('.button');
+    button.addEventListener('mouseover', () => {
+      button.style.transform = 'scale(1.1) rotate(5deg)';
+    });
+    button.addEventListener('mouseout', () => {
+      button.style.transform = 'scale(1) rotate(0deg)';
+    });
+  });
+  </script>
+</body>
+</html>

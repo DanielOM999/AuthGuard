@@ -1,0 +1,45 @@
+<div class="container2"></div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="login-container" id="lC">
+                <h2 class="login-title">Register</h2>
+                <form id="loginForm" action="/auth/register" method="POST">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required>
+                        <p class="Error" id="onEmail">Hello World I am a Person!</p>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                        <p class="Error" id="onPassword">Hello World I am a Person!</p>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-login">Register</button>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="/auth" class="forgot-password">Have an account?</a>
+                    </div>
+                </form>
+                <div class="or-divider">
+                    <span>Or</span>
+                </div>
+                <div class="social-login">
+                    <button class="social-btn google" title="Login with Google">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button class="social-btn discord" title="Login with Discord">
+                        <i class="fab fa-discord"></i>
+                    </button>
+                    <button class="social-btn github" title="Login with GitHub">
+                        <i class="fab fa-github"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
